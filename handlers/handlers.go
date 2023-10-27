@@ -14,7 +14,7 @@ var db *gorm.DB
 
 func init() {
 	var err error
-	db, err = gorm.Open("mysql", "user:password@tcp(localhost:3306)/tienda?charset=utf8&parseTime=True&loc=Local")
+	db, err = gorm.Open("mysql", "User:Password@tcp(localhost:3306)/tienda?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic("Error al conectar a la base de datos")
 	}
